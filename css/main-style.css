@@ -1,0 +1,735 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{padding: 0;margin: 0;}
+html{font-family: 'Inter',"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"}
+
+body{
+		color: #232323;
+		font-size: 18px;
+	
+	}
+
+h1{
+	text-transform: uppercase
+}
+
+#main{
+	
+	
+}
+/*			<!--						BEGIN LOGO-->*/
+
+.logo{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 60px;
+	
+}
+
+
+
+/*			<!--						BEGIN HEADER-->*/
+#header .container{
+	display: flex;
+	
+}
+
+#header .container .logo img{
+	width: 70px;
+	height: auto;
+	margin-top: 7px;
+	display: flex;
+	margin-left: 15px;
+	
+}
+#header{ 
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px; 
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	position:fixed;
+	z-index: 99999;
+}
+#nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	
+}
+#nav, .subnav{
+	list-style-type: none
+}
+#nav > li {
+	display: inline-block;
+	
+}
+#nav ul li{
+	
+	position: relative;
+	min-width: 170px
+	
+}
+#nav ul>li> a{
+	color:white;
+
+}
+#nav ul li a {
+	
+	text-decoration: none;
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+	text-align: center;
+	
+}
+#nav ul li:hover .subnav{
+	display: block
+}
+#nav ul >li:hover >a ,
+#nav .subnav li:hover a{
+	color: black;
+	background-color:white
+	
+}
+#nav .subnav{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left:0;
+	
+	min-width: 220px; 
+	background-color: black;
+	box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.3)
+	
+}
+#nav .subnav a {
+	color: white;
+	padding: 0 25px;
+	line-height: 50px;
+	text-align: start;
+	
+}
+#nav .nav-icon{
+	font-size: 14px;
+	padding: 0 5px;
+}
+ 
+
+	
+/*			<!--						BEGIN SLIDER-->*/	
+#banner{
+	margin-top: 60px;
+}
+#banner .item{
+	position: relative;
+	width: 100%;
+	}
+
+#banner .item img{
+	height: 500px;
+	object-fit: cover;
+	background: center;
+}
+#banner .item .slider-cap  {
+	
+	position: absolute;
+	width:50%;
+	top:50%;
+	left: 25%;
+	color: white;
+	text-align: center;
+	
+	
+}
+
+.image-100{width: 100%; height:auto}
+
+
+
+/*										BEGIN CONTENT GIOI THIEU*/
+
+.maunen-gioithieu{
+	background-color: rgb(17 ,17, 17);
+	
+}
+.maunen-gioithieu .row {
+	padding: 70px 0px 15px
+}
+.gioi-thieu h4 {
+	color: #ef4023;
+}
+.gioi-thieu h1{
+	padding: 10px 0px 28px;
+	color: white;
+	opacity: 0.8;
+	transform: all 1s;
+}
+.gioi-thieu p {
+	color: #999999;
+	line-height: 1.78
+}
+.gioi-thieu .text-gioithieu{
+	margin: 70px 5px;
+	
+}
+
+.maunen-gioithieu h1{
+	color: white
+}
+.gioi-thieu img{
+	width: 80%;
+	padding-top: 70px;
+	transition: all 1s
+	
+}
+.gioi-thieu:hover img{
+	transform: scale(1.2)
+	
+}
+.gioi-thieu:hover h1{
+	opacity: 1
+}
+
+
+
+
+/*			<!--						BEGIN CONTENT MEMBER -->*/
+
+.content-member{padding-top: 70px }
+.member{
+	position: relative;
+	overflow:hidden
+}
+.member img {
+/*	min-height: 350px;*/
+	
+}
+.member p a {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top:175px;
+	text-decoration: none;
+	opacity: 0;
+	font-size: 40px;
+	color: black;
+	font-style: oblique;
+	font-weight: 700
+	
+}
+.member a img ,
+.member p a {
+	transition: all 0.1s
+}
+.member:hover>a img {
+	transform: scale(0.9);
+	opacity: 0.5;
+
+}
+.member:hover p a{
+	opacity: 1;
+	color: black
+}
+
+
+
+
+/*			<!--						BEGIN CONTENT VIBE-->*/
+.content-vibe{
+	margin-top: 50px;
+	background-color: black;
+	min-height: 700px;
+
+	 
+}
+
+
+.content-vibe .container{
+	overflow: hidden; 
+}
+.content-vibe img{
+	height: auto;
+	width: 40%;
+	margin-left: 60%
+	
+}
+.content-vibe h1{
+	margin: 50px 0px 30px;
+	font-size: 4rem;
+	color: white;
+	
+	margin-left:-400px;
+
+	
+}
+.content-vibe h3 {
+	color: white;
+	
+	margin-left:-400px;
+	
+	
+}
+.content-vibe h1,
+.content-vibe h3{
+	transition: all 1s;
+	
+}
+.content-vibe:hover h1,
+.content-vibe:hover h3
+{
+	
+	margin-left: 0px
+}
+
+.content-vibe:hover img{
+	opacity: 1;
+	transform: scale(1.2);
+	
+}
+
+
+
+
+
+	
+
+/*			<!--						BEGIN CONTENT NEW ALBUM-->*/
+#slider{
+	margin-top: 10px;
+}
+.td-album .col-12 h1{
+	width: 100%;
+	margin-top: 50px;
+}
+#slider .item{
+	position: relative;
+	width: 100%;
+	
+	
+	}
+
+#slider .item img{
+	height: 700px;
+	object-fit: cover;
+	background: center;
+	
+	
+	
+}
+#slider .item:hover img,
+#slider .item:hover .slider-cap{
+	cursor: pointer
+	
+}
+
+#slider .item .slider-cap  {
+	
+	position: absolute;
+	width:100%;
+	top:75%;
+	left: 5%;
+	color: white;
+	text-align:start;
+	
+	
+}
+#slider .item .slider-cap h1 {
+	margin: 10px 0px;
+	
+	font-size: 4rem;
+
+	
+	
+	
+}
+
+
+
+
+
+/*			<!--						BEGIN CONTENT NEWS-->*/
+
+.content-new{
+	margin-bottom: 50px;
+}
+.content-new .col-12{
+	
+	margin-top: 70px;
+	
+	
+}
+.content-new h2{
+	color: rgb(17,17,17);
+	font-size:1.1rem;
+	line-height: 1.5;
+	margin: 0px 0px 20px;
+	height: 90px;
+	transition: all 0.1s;
+	opacity: 0.7;
+	
+	
+}
+
+.content-new p {
+	color: #888888;
+	font-size: 14px;
+	font-weight:500;
+	margin-bottom: 15px
+	
+}
+.content-new img{
+	transition: all 0.5s
+}
+
+.content-new .col-3:hover img{
+	transform: scale(1.1)
+}
+.content-new .col-3:hover h2{
+	opacity: 1
+}
+
+
+/*.........................FOOTER*/
+
+#footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+}
+#footer{
+	background-color: black;
+	height: 250px;
+	
+	overflow: hidden;
+ 
+}
+#footer .col-6 .icon-box{
+	display: flex;
+	list-style: none;
+	
+	
+}
+#footer .icon-footer .col-6{
+	
+	margin-top: auto;
+}
+#footer  .icon-footer h4{
+	color: white;
+	padding: 30px 15px ;
+	font-size: 15px;
+	opacity: 0.5;
+	transition: all 0.3s;
+	font-weight: 300
+	
+	
+}
+#footer:hover  .icon-footer h4{
+	opacity: 1
+}
+
+#footer .icon-footer{
+	margin-top: 60px;
+}
+#footer .icon-box li {
+	color: white;
+	padding: 0 20px;
+	opacity: 0.5;
+	transition: all 0.3s;
+	transform: scale(1.5);
+	
+}
+#footer .icon-footer img{
+	width: 50%;
+	margin-left: 120%;
+	transition: all 0.5s
+}
+#footer:hover .icon-box li{
+	opacity: 1;
+	cursor: pointer;
+	
+}
+#footer:hover .icon-footer img{
+	margin-left: 50%
+	
+}
+
+/*.........................................ARTISTS*/
+#content-artists{
+	margin-top: 60px;
+}
+
+#content-artists h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.content-thanhvien-ar img{
+	padding: 15px 10px;
+	transition: all 0.3s;
+	
+}
+.content-thanhvien-ar h4{
+	text-align: center;
+	opacity: 0.5;
+	transition: all 0.3
+}
+
+#content-artists .content-thanhvien-ar .col-3:hover img{
+	transform: scale(0.95);
+	cursor:pointer;
+}
+#content-artists .content-thanhvien-ar .col-3:hover h4{
+	opacity: 1;
+	cursor:pointer;
+}
+
+
+
+
+
+/*.........................................ACTORS*/
+#content-actors{
+	margin-top: 60px;
+}
+
+#content-actors h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.content-thanhvien img{
+	padding: 15px 10px;
+	transition: all 0.3s;
+	
+}
+.content-thanhvien h4{
+	text-align: center;
+	opacity: 0.5;
+	transition: all 0.3
+}
+
+#content-actors .content-thanhvien .col-3:hover img{
+	transform: scale(0.95);
+	cursor:pointer;
+}
+#content-actors .content-thanhvien .col-3:hover h4{
+	opacity: 1;
+	cursor:pointer;
+}
+
+
+
+
+
+/*.........................................NEW*/
+#content-new {
+	margin-top: 60px
+}
+
+#content-new h2{
+	margin-top: 110px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 100%
+}
+.new .col-4 {
+	
+}
+.new .khung{
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 26px;
+    border: 1px solid #111111;
+    font-size: 0.83rem;
+    font-weight: 700;
+	margin-top: 40px;
+	transition: all 0.1s;
+	
+	margin-left: 20px
+	
+}
+
+.new h4 {
+	margin-left: 20px;
+	margin-right: 20px;
+	min-height: 110px;
+	
+	
+	
+}
+.text .ngay {
+	color: #999999;
+    font-size: 0.83rem;
+	bottom: 36px;
+	font-weight: 400;
+	margin-top:40px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+	transition: all 0.1s;
+	
+}
+
+
+.text{
+	
+	border: 1px solid #111111;
+	transition: all 0.1s;
+}
+.text:hover,
+.text:hover .ngay,
+.new .text:hover .khung
+{   border-color: red;
+	color: red;
+	cursor: pointer;
+}
+
+/*.........................................ARTISTS*/
+#content-artists{
+	margin-top: 60px;
+}
+
+#content-artists h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.content-thanhvien-ar img{
+	padding: 15px 10px ;
+	transition: all 0.3s;
+	
+}
+.content-thanhvien-ar h4{
+	text-align: center;
+	opacity: 0.5;
+	transition: all 0.3
+}
+
+#content-artists .content-thanhvien-ar .col-3:hover img{
+	transform: scale(0.95);
+	cursor:pointer;
+}
+#content-artists .content-thanhvien-ar .col-3:hover h4{
+	opacity: 1;
+	cursor:pointer;
+}
+
+/*.........................................INTRO*/
+
+#content-intro{
+	margin-top: 120px;
+	text-align: center;
+	
+	
+}
+#content-intro h2 {
+	margin-bottom: 50px
+}
+#content-intro .content-sl h2{
+	text-align: center;
+	font-size: 4rem;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: 250px;
+	transition: all 0.5s;
+	
+}
+#content-intro .content-sl:hover h2{
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0
+}
+
+#content-intro .content-sl {
+	top: 0;
+	width: 100%;
+	object-fit: cover;
+	background-image: url( " ../IMAGE/intro_bg_tab.jpg");
+	min-height: 500px;
+	background-position: center bottom;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+/*								CONTENT-NOIDUNG*/
+.content-br{
+	background-color: rgba(17,17,17,1.00);
+	min-height: 600px
+	
+}
+.content-nd {
+	text-align: start;
+
+}
+.content-nd .nd .col-6 img{
+	width: 80%;
+	padding-top: 150px;
+	opacity: 0.5;
+	transition: all 0.5s;
+	margin: 0 15px;
+}
+
+
+.content-nd h4{
+	color: #ef4023;
+	margin-top: 150px
+	
+}
+.content-nd h1{
+	padding: 10px 0px 28px;
+	color: white;
+	
+	
+}
+.content-nd p {
+	color: #999999;
+	line-height: 1.78;
+	padding-bottom: 15px
+	
+}
+.text-content{
+	opacity: 0.5;
+	transition: all 0.5s;
+	
+}
+.content-nd:hover .text-content{
+	opacity: 1;
+	
+}
+.content-nd:hover .nd .col-6 img{
+	opacity: 1;
+	transform: scale(1.1)
+	
+	
+	
+}
+
+
+
+
+
+
+
